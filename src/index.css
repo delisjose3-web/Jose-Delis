@@ -1,29 +1,26 @@
-.
+.html {
+  scroll-behavior: smooth;
+}
 
-/* Tailwind CSS Base Styles */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  @apply bg-gray-100 text-gray-900 font-sans;
+}
 
 /* Custom Scrollbar */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #4a5568 #edf2f7;
+/* Width of scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
 }
-
-*::-webkit-scrollbar {
-  width: 8px;
+/* Track of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
-
-*::-webkit-scrollbar-track {
-  background: #edf2f7;
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
 }
-
-*::-webkit-scrollbar-thumb {
-  background-color: #4a5568;
-  border-radius: 10px;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background: #2d3748;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
